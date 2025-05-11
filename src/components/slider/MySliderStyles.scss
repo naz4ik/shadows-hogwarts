@@ -1,0 +1,79 @@
+// Стилі для зображення всередині слайду
+.slide_Image {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+
+  // Адаптивні розміри
+  @media (min-width: 640px) {
+    max-width: 480px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1040px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+// Обгортка всього слайдера
+.outerSliderWrapper {
+  width: 100vw; // Повна ширина вікна
+  margin-left: calc(-50vw + 50%); // Центрування на мобільних
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; // Відстань між кнопками та слайдером
+
+  // Адаптивні розміри
+  @media (min-width: 640px) {
+    max-width: 555px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1136px;
+  }
+}
+
+// Внутрішня обгортка самого слайдера
+.sliderWrapper {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+// KeenSlider контейнер
+.keen-slider {
+  height: 100%;
+}
+
+// Стилі для кнопок перемикання (вліво/вправо)
+.customPrev,
+.customNext {
+  display: none; // Приховані на мобільних
+
+  @media (min-width: 640px) {
+    display: block; // Показуємо кнопки на планшетах і вище
+    background: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+    height: 254px;
+    width: 150px;
+    border: 1px solid rgba(180, 189, 195, 1);
+    background-color: rgb(0, 0, 27); // Темне тло для контрасту
+  }
+
+  @media (min-width: 1200px) {
+    height: 530px; // Збільшуємо кнопку на великих екранах
+  }
+}

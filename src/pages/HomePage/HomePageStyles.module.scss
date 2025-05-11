@@ -1,0 +1,67 @@
+/* Визначення шрифта "MyFont" через @font-face */
+@font-face {
+  font-family: MyFont; /* Ім'я шрифта для використання в стилях */
+  src: url("/fonts/Blogger_Sans-Medium.otf") format("opentype");
+}
+
+/* Основні стилі для header і body */
+header,
+body {
+  background-image: url("/background/sky.jpg");
+  font-family: MyFont;
+}
+
+/* Стилі для логотипу */
+.logotype {
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 50px;
+}
+
+/* Стилі для зображення логотипу */
+.logo {
+  height: 32px;
+}
+
+/* Стилі для тексту в блоці "about" */
+.text_about,
+.text_Caution {
+  color: white;
+  width: 45%;
+  font-size: 20px;
+}
+
+/* Загальні стилі для блоку "about", кнопки і тексту за умовами */
+.about,
+.linkToGame,
+.text_Caution {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Стилі для лінку на гру */
+.linkToGame {
+  text-decoration: none;
+}
+
+/* Стилі для кнопки, яка веде до гри */
+.buttonToGame {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: MyFont;
+}
+
+/* Відступ для попереджувального тексту */
+.text_Caution {
+  margin-top: 50px;
+}
