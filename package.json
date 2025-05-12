@@ -2,7 +2,7 @@
   "name": "hackaton-2025",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://naz4ik.github.io/shadows-in-hogwarts",
+  "homepage": "https://naz4ik.github.io/shadows-hogwarts",
   "type": "module",
   "scripts": {
     "start": "vite",
